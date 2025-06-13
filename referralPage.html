@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+
+    <style>
+        #circleReferral {
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        #referralMainContainer {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(61, 61, 124);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        #referralCodeContainer{
+            box-sizing: border-box;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        height: auto; 
+        width: 100%; 
+        background-color: rgb(42, 42, 91); 
+        border-radius: 5px;
+            color: rgba(245, 245, 245, 0.8);
+            padding: 11px;
+            margin-top: 10px;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="referralMainContainer">
+        <div id="referralHeader">
+
+            <a href="./index.html">
+                <svg class="closePage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+                </svg>
+            </a>
+            <h2>Invite friend</h2>
+
+        </div>
+
+
+        <div id="circleReferral"> </div>
+
+        <p style="font-weight: bold; font-size: 18px; 
+        max-width: 320px; text-align: center; 
+        color: whitesmoke ;">
+            Invite your friends and earn $ 20.00
+        </p>
+        <p style="font-size: 12px; font-weight: bold;
+         text-align: center; color: rgba(245, 245, 245, 0.8); margin-top: 0px;">
+            Invite a friend, and you'll each get $20.00 when they send $100.00+ 
+            in one transaction
+        </p>
+        <div id="referralCodeContainer" >
+            <div>
+                <p style="margin-top: 0px; margin-bottom: 0px;">Your referral code</p>
+                <p id="referralCode" style="margin-bottom: 0px; margin-top: 5px; font-size: 19px;">OGDM67OS</p>
+            </div>
+            <button id="referralCodeCopyButton" style="background-color: 
+            transparent; color: rgba(245, 245, 245, 0.8);
+             padding: 7px; border: solid thin rgba(245, 245, 245, 0.8); 
+             border-radius: 20px; width: 70px;"  >
+                Copy
+            </button>
+        </div>
+
+        <button style="width: 100%; display: flex; justify-content: center; 
+        align-items: center; color: rgba(245, 245, 245, 0.8);
+         background-color: green; border: none; margin-top: 20px; height: 
+         70px; border-radius: 10px; font-weight: bold; font-size: 15px;"  >
+            Invite friends &gt;
+        </button>
+        <a href="#" style="text-decoration: underline; color: rgba(245, 245, 245, 0.8); text-align: center; margin-top: 20px; max-width: 220px;" >
+            *By clicking invite friends, you agree to our terms and conditions
+        </a>
+
+    </div>
+</body>
+
+</html>

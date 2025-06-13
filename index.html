@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+</head>
+
+<body>
+
+    <div id="mainContainer">
+        <div id="firstContainer">
+
+            <div id="head">
+                <div id="profileIcon">
+                    <img src="./icons/icons8-user-64.png" alt="">
+                </div>
+
+                <div id="refNot">
+                    <div id="referal">
+
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.000000 48.000000"
+                            preserveAspectRatio="xMidYMid meet" id="giftIcon">
+
+                            <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
+                                <path d="M148 433 c-21 -26 -27 -48 -17 -64 6 -11 0 -15 -29 -19 -36 -5 -37
+                        -6 -40 -54 -2 -27 2 -54 7 -59 6 -6 11 -44 11 -84 0 -108 8 -113 160 -113 152
+                        0 160 5 160 113 0 40 5 78 11 84 5 5 9 32 7 59 -3 49 -3 49 -41 52 -32 3 -36
+                        6 -28 21 11 20 -5 58 -31 75 -13 8 -26 7 -49 -1 -21 -8 -38 -9 -50 -3 -27 15
+                        -54 12 -71 -7z m72 -32 c18 -35 12 -51 -20 -51 -34 0 -53 25 -39 52 13 24 46
+                        23 59 -1z m99 2 c15 -27 -5 -53 -39 -53 -32 0 -38 16 -20 51 13 24 46 25 59 2z
+                        m-89 -113 l0 -30 -70 0 -70 0 0 30 0 30 70 0 70 0 0 -30z m160 0 l0 -30 -70 0
+                        -70 0 0 30 0 30 70 0 70 0 0 -30z m-165 -140 l0 -80 -45 0 c-26 0 -51 5 -58
+                        12 -7 7 -12 40 -12 80 l0 68 58 0 57 0 0 -80z m145 12 c0 -40 -5 -73 -12 -80
+                        -7 -7 -32 -12 -57 -12 l-46 0 0 80 0 80 58 0 57 0 0 -68z" />
+                            </g>
+                        </svg>
+                        <p>
+                            Get 20.0 CAD
+                        </p>
+                    </div>
+
+                    <img src="./icons/icons8-notification.svg" alt="notificationBell" id="notificationBell">
+                </div>
+
+            </div>
+
+           
+
+            <div id="accountsTitle">
+                <h3 id="myAccounts">My Accounts</h3>
+                <div id="balanceToggle">
+                    <button id="balanceToggleButton">
+
+                        <p id="buttonText"> Show balance </p>
+                        <img src="./icons/hide.svg" alt="hide" id="hideBalance">
+                    </button>
+                </div>
+            </div>
+            <div id="accounts">
+                <div id="cad">
+                    <div class="currency">
+                        <img src="./icons/icons8-canada-48.png" alt="cadcurrencylogo" class="currencyIcon">
+                        <p>CAD</p>
+                    </div>
+                    <div>
+
+                        <p id="cadAmount" class="amounts">****</p>
+                    </div>
+
+                </div>
+                <div id="ngn">
+                    <div class="currency">
+                        <img src="./icons/icons8-nigeria-circular-48.png" alt="ngncurrencylogo" class="currencyIcon">
+
+                        <p>NGN</p>
+                    </div>
+
+                    <div>
+
+                        <p id="ngnAmount" class="amounts">****</p>
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <button id="sendMoneyButton">
+                    <h3>Send money</h3>
+                </button>
+                <button id="addMoneyButton">
+                    <h3>Add money</h3>
+                </button>
+                <button id="threedotButton">
+
+                    <div class="threeDots"></div>
+                    <div class="threeDots"></div>
+                    <div class="threeDots"></div>
+                </button>
+            </div>
+        </div>
+
+
+        <div id="secondContainer">
+            <div id="getStarted">
+                <p>Get started</p>
+
+                <a href="./referralPage.html" id="viewSteps">View all steps</a>
+            </div>
+            <div id="invite">
+                <div id="inviteSub">
+                    <div>
+                        <h3 id="inviteH3">Invite a friend and get $20.00</h3>
+                        <p id="inviteP">They sign up and verify their identity</p>
+                    </div>
+                    <div id="addPerson">
+                        <svg version="1.0" id="addPersonIcon" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                stroke="none">
+                                <path d="M286 529 c-63 -18 -95 -82 -73 -146 34 -103 188 -100 216 3 25 89
+                                    -55 169 -143 143z m91 -51 c51 -48 15 -138 -56 -138 -47 0 -81 32 -81 79 0 72
+                                    84 109 137 59z" />
+                                <path d="M280 260 c-48 -9 -78 -26 -122 -68 -36 -35 -49 -62 -28 -62 5 0 29
+                                        20 54 44 50 50 87 62 172 53 42 -4 54 -3 54 9 0 20 -76 35 -130 24z" />
+                                <path d="M439 181 c-38 -39 -40 -97 -5 -138 35 -40 107 -40 142 0 55 64 11
+                                    167 -71 167 -27 0 -44 -8 -66 -29z m81 -40 c0 -12 7 -18 18 -17 9 0 17 -6 17
+                                    -14 0 -8 -8 -14 -17 -14 -11 1 -18 -5 -18 -17 0 -10 -7 -19 -15 -19 -8 0 -15
+                                    9 -15 19 0 12 -7 18 -17 17 -10 0 -18 6 -18 14 0 8 8 14 18 14 10 -1 17 5 17
+                                    17 0 11 7 19 15 19 8 0 15 -8 15 -19z" />
+                            </g>
+                        </svg>
+
+                    </div>
+                </div>
+                <div id="inviteFriendsButton">
+                    <a href="./referralPage.html">Invite friends</a>
+                    <!-- <p>Dismiss</p> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="./index.html" id="homePage">
+                <svg id="homeicon" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"
+                    class="footerIcons">
+                    <title>Artboard 97</title>
+                    <path
+                        d="M28.781,104.122H99.219a2.111,2.111,0,0,0,2.111-2.111V52.188a2.11,2.11,0,0,0-.851-1.694L65.26,24.3a2.109,2.109,0,0,0-2.519,0l-35.219,26.2a2.11,2.11,0,0,0-.851,1.694v49.822A2.111,2.111,0,0,0,28.781,104.122ZM72.195,99.9H55.8V75.344H72.195Zm-41.3-46.651L64,28.62,97.108,53.249V99.9H76.417V73.233a2.111,2.111,0,0,0-2.111-2.111H53.69a2.111,2.111,0,0,0-2.111,2.111V99.9H30.892Z" />
+                </svg>
+                <p>Home</p>
+            </a>
+
+            <a href="./transactionsPage.html" id="transactionsPage">
+                <svg id="transactionicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="footerIcons">
+                    <g id="transactionIconMain">
+                        <path d="M25,13H9l1.8-2.4A1,1,0,1,0,9.2,9.4l-3,4A1,1,0,0,0,7,15H25a1,1,0,0,0,0-2Z" />?
+                        <path
+                            d="M21.4,22.8a1,1,0,0,0,.6.2,1,1,0,0,0,.8-.4l3-4A1,1,0,0,0,25,17H7a1,1,0,0,0,0,2H23l-1.8,2.4A1,1,0,0,0,21.4,22.8Z" />
+
+                    </g>
+                </svg>
+                <p>Transactions</p>
+            </a>
+
+
+
+            <a href="./referralPage.html" id="referPage">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.000000 48.000000"
+                    preserveAspectRatio="xMidYMid meet" id="referPageIcon" class="footerIcons">
+
+                    <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
+                        <path d="M148 433 c-21 -26 -27 -48 -17 -64 6 -11 0 -15 -29 -19 -36 -5 -37
+                        -6 -40 -54 -2 -27 2 -54 7 -59 6 -6 11 -44 11 -84 0 -108 8 -113 160 -113 152
+                        0 160 5 160 113 0 40 5 78 11 84 5 5 9 32 7 59 -3 49 -3 49 -41 52 -32 3 -36
+                        6 -28 21 11 20 -5 58 -31 75 -13 8 -26 7 -49 -1 -21 -8 -38 -9 -50 -3 -27 15
+                        -54 12 -71 -7z m72 -32 c18 -35 12 -51 -20 -51 -34 0 -53 25 -39 52 13 24 46
+                        23 59 -1z m99 2 c15 -27 -5 -53 -39 -53 -32 0 -38 16 -20 51 13 24 46 25 59 2z
+                        m-89 -113 l0 -30 -70 0 -70 0 0 30 0 30 70 0 70 0 0 -30z m160 0 l0 -30 -70 0
+                        -70 0 0 30 0 30 70 0 70 0 0 -30z m-165 -140 l0 -80 -45 0 c-26 0 -51 5 -58
+                        12 -7 7 -12 40 -12 80 l0 68 58 0 57 0 0 -80z m145 12 c0 -40 -5 -73 -12 -80
+                        -7 -7 -32 -12 -57 -12 l-46 0 0 80 0 80 58 0 57 0 0 -68z" />
+                    </g>
+                </svg>
+                <p>Referral</p>
+            </a>
+
+
+
+            <a href="./helpPage.html" id="helpPage">
+
+                <svg version="1.1" class="footerIcons" id="helpIcon" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128 128"
+                    style="enable-background:new 0 0 128 128;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #0A0A0A;
+                        }
+
+                        .st1 {
+                            display: none;
+                        }
+
+                        .st2 {
+                            display: inline;
+                        }
+                    </style>
+                    <g id="row2_1_">
+                        <g id="_x36__3_">
+                            <g id="transparent">
+                                <g>
+                                    <path class="st0" d="M64,0.3C28.7,0.3,0,28.8,0,64c0,35.2,28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7C128,28.8,99.3,0.3,64,0.3z
+                                    M64,121.3C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c12.1,0,23.4,3.7,32.7,10.1c13.7,9.4,23.1,24.5,24.7,41.8
+                                    c0,0.5,0.1,9.8,0,10.7C118.7,98.5,94,121.3,64,121.3z M60.8,32.2c-14.5,0-19.1,13.3-19.2,25.5h9.6c-0.2-8.8,0.7-15.9,9.6-15.9
+                                    c6.4,0,9.6,2.7,9.6,9.6c0,4.4-3.4,6.6-6.4,9.6c-6.2,6-5.7,10.4-6,18.7h8.4c0.3-7.5,0.2-7.3,6.4-13.9c4.2-4.1,7.1-8.2,7.1-14.5
+                                    C80,41.2,74.6,32.2,60.8,32.2z M64.1,86.3c-3.6,0-6.4,2.9-6.4,6.4c0,3.5,2.9,6.4,6.4,6.4c3.6,0,6.4-2.9,6.4-6.4
+                                    C70.5,89.1,67.6,86.3,64.1,86.3z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x35__3_" class="st1">
+                            <g id="down_1_" class="st2">
+                                <g>
+                                    <path class="st0" d="M64,0.3C28.7,0.3,0,28.8,0,64s28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7S99.3,0.3,64,0.3z M64,121.3
+                                    C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z M85.7,58.1
+                                    L70.4,70.3V41.7c0-2.2-2.3-3.2-4.4-3.2H62c-2.2,0-3.9,1.8-3.9,3.9v28.4L42.3,58.1c-2.2,0-3.9,1.8-3.9,3.9v7.1L64,95.8l25.6-26.7
+                                    V62C89.6,59.8,87.8,58.1,85.7,58.1z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x34__3_" class="st1">
+                            <g id="up" class="st2">
+                                <g>
+                                    <path class="st0" d="M64,0.3C28.7,0.3,0,28.8,0,64s28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7S99.3,0.3,64,0.3z M64,121.3
+                                    C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z M38.4,58.9
+                                    V66c0,2.2,1.8,3.9,3.9,3.9l15.3-12.2v28.7c0,2.2,2.3,3.2,4.4,3.2H66c2.2,0,3.9-1.8,3.9-3.9V57.2l15.8,12.7
+                                    c2.2,0,3.9-1.8,3.9-3.9v-7.1L64,32.2L38.4,58.9z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x33__3_" class="st1">
+                            <g id="right_1_" class="st2">
+                                <g>
+                                    <path class="st0"
+                                        d="M64,0.3C28.8,0.3,0.3,28.8,0.3,64c0,35.2,28.5,63.7,63.7,63.7c35.2,0,63.7-28.5,63.7-63.7
+                                    C127.7,28.8,99.2,0.3,64,0.3z M64,121.3C32.3,121.3,6.7,95.7,6.7,64C6.7,32.3,32.3,6.7,64,6.7c31.7,0,57.3,25.7,57.3,57.3
+                                    C121.3,95.7,95.7,121.3,64,121.3z M62,38.5c-2.2,0-3.9,1.8-3.9,3.9l12.2,15.2H41.7c-2.2,0-3.2,2.2-3.2,4.4V66
+                                    c0,2.2,1.8,3.9,3.9,3.9h28.4L58.1,85.6c0,2.2,1.8,3.9,3.9,3.9h7.1L95.8,64L69.1,38.5H62z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x32__4_" class="st1">
+                            <g id="left_1_" class="st2">
+                                <g>
+                                    <path class="st0" d="M64,0.3C28.7,0.3,0,28.8,0,64c0,35.2,28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7C128,28.8,99.3,0.3,64,0.3z
+                                    M64,121.3C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z
+                                    M86.4,57.6H57.6l12.3-15.2c0-2.2-1.8-3.9-3.9-3.9h-7.1L32,64l26.8,25.5H66c2.2,0,3.9-1.8,3.9-3.9L57.1,69.9h28.6
+                                    c2.2,0,3.9-1.8,3.9-3.9V62C89.6,59.9,88.6,57.6,86.4,57.6z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x31__4_" class="st1">
+                            <g id="left_3_" class="st2">
+                                <g>
+                                    <path class="st0" d="M64,0.3C28.7,0.3,0,28.8,0,64c0,35.2,28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7C128,28.8,99.3,0.3,64,0.3z
+                                    M64,121.3C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z
+                                    M65.3,38.5L41.6,64l23.6,25.5h13.5L54.4,64l24.4-25.5H65.3z" />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="row1_1_" class="st1">
+                        <g id="_x36__2_" class="st2">
+                            <g id="plus_transparent">
+                                <g>
+                                    <path class="st0"
+                                        d="M64,0.3C28.7,0.3,0,28.8,0,64c0,35.2,28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7C128,28.8,99.3,0.3,64,0.3z
+                                        M64,121.3C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z
+                                        M84.8,60.8H70.4V46.5c0-2.6-2.2-4.8-4.8-4.8c-2.7,0-4.8,2.1-4.8,4.8v14.3H46.4c-2.7,0-4.8,2.1-4.8,4.8c0,2.6,2.1,4.8,4.8,4.8
+                                        h14.4v14.3c0,2.6,2.1,4.8,4.8,4.8c2.6,0,4.8-2.1,4.8-4.8V70.4h14.4c2.6,0,4.8-2.1,4.8-4.8C89.6,63,87.5,60.8,84.8,60.8z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x35__2_" class="st2">
+                            <g id="error_transparent_copy">
+                                <g>
+                                    <path class="st0"
+                                        d="M64,0.3C28.7,0.3,0,28.8,0,64c0,35.2,28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7C128,28.8,99.3,0.3,64,0.3z
+                                    M64,121.3C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z
+                                    M87.2,44.5c-0.9-0.9-2.3-0.9-3.2,0L55.2,73.2L41.4,59.5c-0.9-0.9-2.3-0.9-3.2,0l-4.8,4.8c-0.9,0.9-0.9,2.3,0,3.2l15.3,15.3
+                                    c0,0,0,0,0,0l3.3,3.3l0.8,0.8l0,0l0.7,0.7c0.9,0.9,2.3,0.9,3.2,0L92,52.5c0.9-0.9,0.9-2.3,0-3.2L87.2,44.5z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x34__2_" class="st2">
+                            <g id="error_transparent">
+                                <g>
+                                    <path class="st0" d="M64,0.3C28.7,0.3,0,28.8,0,64c0,35.2,28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7C128,28.8,99.3,0.3,64,0.3z
+                                        M64,121.3C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z
+                                        M85.9,48.1L81,43.3c-0.9-0.9-2.3-0.9-3.2,0L64,57L50.2,43.3c-0.9-0.9-2.3-0.9-3.2,0l-4.9,4.8c-0.9,0.9-0.9,2.3,0,3.2L55.9,65
+                                        L42.1,78.8c-0.9,0.9-0.9,2.3,0,3.2l4.9,4.8c0.9,0.9,2.3,0.9,3.2,0L64,73.1l13.8,13.7c0.9,0.9,2.3,0.9,3.2,0l4.9-4.8
+                                        c0.9-0.9,0.9-2.3,0-3.2L72.1,65l13.8-13.7C86.8,50.4,86.8,49,85.9,48.1z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x33__2_" class="st2">
+                            <g id="alert_transparent">
+                                <g>
+                                    <path class="st0" d="M64,32.2c-4.4,0-8,3.3-8,7.3v24.8c0,4.1,3.6,7.3,8,7.3s8-3.3,8-7.3V39.5C72,35.4,68.4,32.2,64,32.2z
+                                    M64,0.3C28.7,0.3,0,28.8,0,64c0,35.2,28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7C128,28.8,99.3,0.3,64,0.3z M64,121.3
+                                    C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z M64,81.2
+                                    c-4.4,0-8,3.3-8,7.3s3.6,7.3,8,7.3s8-3.3,8-7.3S68.4,81.2,64,81.2z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x32__3_" class="st2">
+                            <g id="minus_transparent">
+                                <g>
+                                    <path class="st0"
+                                        d="M64,0.3C28.7,0.3,0,28.8,0,64c0,35.2,28.7,63.7,64,63.7c35.3,0,64-28.5,64-63.7C128,28.8,99.3,0.3,64,0.3z
+                                        M64,121.3C32.2,121.3,6.4,95.7,6.4,64C6.4,32.3,32.2,6.7,64,6.7c31.8,0,57.6,25.7,57.6,57.3C121.6,95.7,95.8,121.3,64,121.3z
+                                        M81.6,60.8H43.2c-2.7,0-4.8,2.1-4.8,4.8c0,2.6,2.2,4.8,4.8,4.8h38.4c2.6,0,4.8-2.1,4.8-4.8C86.4,63,84.3,60.8,81.6,60.8z" />
+                                </g>
+                            </g>
+                        </g>
+                        <g id="_x31__3_" class="st2">
+                            <g id="_x32__2_">
+                                <g>
+                                    <path class="st0" d="M64,0C28.7,0,0,28.7,0,64s28.7,64,64,64c35.3,0,64-28.7,64-64S99.3,0,64,0z M64,121.6
+                                    C32.2,121.6,6.4,95.8,6.4,64S32.2,6.4,64,6.4c31.8,0,57.6,25.8,57.6,57.6S95.8,121.6,64,121.6z M49.2,38.4L73.6,64L49.2,89.6
+                                    h13.5L86.4,64L62.7,38.4H49.2z" />
+                                </g>
+                            </g>
+                        </g>
+
+                    </g>
+
+                </svg>
+
+
+
+                <p>Help</p>
+            </a>
+
+        </div>
+
+        <div id="documentOverlay"></div>
+       
+
+        <div id="notificationPopup">
+            <div id="notificationPopupIcons" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; padding: 0px 10px 0px 10px;" >
+                <svg id="notificationClosePage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path
+                            d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+                </svg>
+
+                <img src="./icons/icons8-notification.svg" alt="notificationBell" id="notificationPopupBell" >
+
+
+            </div>
+                <div id="notificationPopupBody">
+
+
+
+                    <div id="notificationPopupHeader">
+                        <h3 style="text-align: center; ">Notifications</h3>
+                        <hr style="margin-top: -5px;">
+                        
+                        
+                    </div>
+                    
+                    <div id="notificationList"></div>
+                </div>
+        </div>
+
+
+        <div id="userNavbar">
+            <div id="user">
+                <img src="./icons/icons8-user-64.png" alt="" class="userIcon">
+                <h3>Ogundipe Moses</h3>
+
+            </div>
+
+            <div class="userNavbarContent">
+                <a>Account details</a>
+                <p>Information about your account</p>
+            </div>
+            <div class="userNavbarContent">
+                <a>Account limits</a>
+                <p>How much you can spend and receive</p>
+            </div>
+            <div class="userNavbarContent">
+                <a>Security</a>
+                <p>Protect your self from intruders</p>
+
+            </div>
+
+            <div class="userNavbarContent">
+                <a>Legal</a>
+                <p>About out contract with you</p>
+
+            </div>
+
+            <div class="userNavbarContent">
+                <a style="color: red;">Sign out</a>
+
+            </div>
+
+            <p id="version">version 0.1 </p>
+
+        </div>
+
+
+        <div id="sendMoney" class="homePopup">
+            <div id="sendMoneyHeader" class="homePopupHeader">
+
+                <h2>Select account</h2>
+
+                <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+                </svg>
+
+            </div>
+            <div class="homePopupContent">
+                <p>CAD</p>
+                <p>Send monry from your $ account</p>
+            </div>
+            <div class="homePopupContent">
+                <p>NGN</p>
+                <p>Send money from your N account</p>
+
+            </div>
+
+        </div>
+
+        <div id="addMoney" class="homePopup">
+            <div id="addMoneyHeader" class="homePopupHeader">
+                <h2>Add money</h2>
+                <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+                </svg>
+
+            </div>
+            <div class="homePopupContent">
+                <p>Bank transfer</p>
+                <p>Add money to your accounts with bank transfer</p>
+
+            </div>
+            <div class="homePopupContent">
+                <p>Credit card/Debit card</p>
+                <p>Add instantly from a card</p>
+
+            </div>
+            <div class="homePopupContent">
+                <p>Cryptocurrency</p>
+                <p>USDT, BTC, ETH...</p>
+
+            </div>
+
+        </div>
+
+        <div id="threedot" class="homePopup">
+            <div id="threedotHeader" class="homePopupHeader">
+                <h2>Account Information</h2>
+                <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+                </svg>
+
+            </div>
+
+            <div class="homePopupContent">
+                <p>Account details</p>
+                <p>Information about your account</p>
+            </div>
+            <div class="homePopupContent">
+                <p>Exchange currency</p>
+                <p>Change your currency to any currency</p>
+            </div>
+            <div class="homePopupContent">
+                <p>Account limits</p>
+                <p>See how far you can go with your spending</p>
+            </div>
+            <div class="homePopupContent">
+                <p>Account statement</p>
+                <p>Download account statement in any format</p>
+            </div>
+            <div id="addNewAccount" class="homePopupContent">
+                <p>+</p>
+                <p>Add new account</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
