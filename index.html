@@ -15,7 +15,7 @@
         <div id="firstContainer">
 
             <div id="head">
-                <div id="profileIcon">
+                <div id="profileIcon" onclick="openAccountDetails()">
                     <img src="./icons/icons8-user-64.png" alt="">
                 </div>
 
@@ -48,15 +48,32 @@
 
             </div>
 
-           
+
 
             <div id="accountsTitle">
-                <h3 id="myAccounts">My Accounts</h3>
+                <h3 class="myAccounts">My Accounts</h3>
                 <div id="balanceToggle">
-                    <button id="balanceToggleButton">
+                    <button id="balanceToggleButton" onclick="balanceToggle()">
 
                         <p id="buttonText"> Show balance </p>
-                        <img src="./icons/hide.svg" alt="hide" id="hideBalance">
+                        <img src="./icons/hide.svg" alt="hide" class="hideEye hideBalance">
+                        <!-- <img src="./icons/icons8-unhide-24.svg" alt="" class="showEye showBalance"> -->
+
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.000000 24.000000"
+                            preserveAspectRatio="xMidYMid meet" class="showEye showBalance">
+
+                            <g transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                stroke="black" fill-opacity="1" stroke-width="6px">
+                                <path d="M55 192 c-16 -10 -37 -31 -44 -46 -13 -24 -13 -30 1 -54 18 -31 72
+                        -62 108 -62 36 0 90 31 108 62 14 24 14 30 1 54 -31 60 -115 82 -174 46z m148
+                        -32 c15 -16 27 -35 27 -40 0 -5 -13 -24 -29 -42 -26 -29 -35 -33 -81 -33 -46
+                        0 -55 4 -81 33 -16 18 -29 36 -29 41 0 15 42 62 64 72 40 17 99 3 129 -31z" />
+                                <path d="M90 145 c-26 -32 13 -81 48 -59 22 14 27 41 12 59 -16 19 -44 19 -60
+                        0z m55 -25 c0 -18 -6 -26 -23 -28 -24 -4 -38 18 -28 44 3 9 15 14 28 12 17 -2
+                        23 -10 23 -28z" />
+                            </g>
+                        </svg>
+
                     </button>
                 </div>
             </div>
@@ -68,7 +85,7 @@
                     </div>
                     <div>
 
-                        <p id="cadAmount" class="amounts">****</p>
+                        <p id="cadAmount" class="amounts" onclick="balanceToggle()">****</p>
                     </div>
 
                 </div>
@@ -81,7 +98,7 @@
 
                     <div>
 
-                        <p id="ngnAmount" class="amounts">****</p>
+                        <p id="ngnAmount" class="amounts" onclick="balanceToggle()">****</p>
                     </div>
                 </div>
             </div>
@@ -103,61 +120,109 @@
 
 
         <div id="secondContainer">
-            <div id="getStarted">
-                <p>Get started</p>
 
-                <a href="./referralPage.html" id="viewSteps">View all steps</a>
-            </div>
-            <div id="invite">
-                <div id="inviteSub">
+            <div class="cryptoBalanceContainer">
+                <h3 class="myAccounts">Save & Invest</h3>
+                <div class="cryptoBalanceSubContainer">
                     <div>
-                        <h3 id="inviteH3">Invite a friend and get $20.00</h3>
-                        <p id="inviteP">They sign up and verify their identity</p>
-                    </div>
-                    <div id="addPerson">
-                        <svg version="1.0" id="addPersonIcon" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+                        <div id="btc">
+                            <div class="cryptoCurrency">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="50px" height="50px">
+                                    <path fill="#ffc107"
+                                        d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z" />
+                                    <path fill="#fff8e1"
+                                        d="M17,34V14h8.199c2.41,0,4.234,0.465,5.48,1.395s1.867,2.293,1.867,4.086c0,0.98-0.25,1.844-0.746,2.59c-0.5,0.746-1.195,1.293-2.086,1.641c1.016,0.258,1.816,0.773,2.402,1.555C32.703,26.043,33,26.992,33,28.121c0,1.922-0.609,3.379-1.828,4.367S28.219,33.98,25.965,34H17z M21,22h4.363c2.063-0.035,3.098-0.824,3.098-2.445c0-0.906-0.262-1.559-0.785-1.957S26.328,17,25.199,17H21V22z M21,25v6h4.844C26.805,31,29,30.531,29,28.391S27.883,25.027,26,25H21z" />
+                                    <path fill="#fff8e1"
+                                        d="M20 11h3v5h-3V11zM25 11h3v5h-3V11zM20 32h3v5h-3V32zM25 32h3v5h-3V32z" />
+                                </svg>
+                               
+                            </div>
+                            <div >
 
-                            <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000"
-                                stroke="none">
-                                <path d="M286 529 c-63 -18 -95 -82 -73 -146 34 -103 188 -100 216 3 25 89
+                                <p id="btcAmount" class="amounts" onclick="balanceToggle()">****</p>
+                                
+                            </div>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                              width="15px" height="15px" viewBox="0 0 50.000000 50.000000"
+                              preserveAspectRatio="xMidYMid meet" class="forward">
+                              <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+                              fill="#000000" fill-opacity="1" stroke="black" stroke-width="15" >
+                              <path  d="M140 453 c0 -4 44 -52 97 -105 l98 -98 -100 -100 c-54 -54 -96 -103
+                              -92 -107 4 -4 56 41 115 100 l107 107 -105 105 c-98 98 -120 116 -120 98z"/>
+                              </g>
+                              </svg>
+                                
+                        </div>
+
+
+                    </div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div>
+                <div id="getStarted">
+                    <p>Get started</p>
+
+                    <a href="./referralPage.html" id="viewSteps">View all steps</a>
+                </div>
+                <div id="invite">
+                    <div id="inviteSub">
+                        <div>
+                            <h3 id="inviteH3">Invite a friend and get $20.00</h3>
+                            <p id="inviteP">They sign up and verify their identity</p>
+                        </div>
+                        <div id="addPerson">
+                            <svg version="1.0" id="addPersonIcon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                    stroke="none">
+                                    <path d="M286 529 c-63 -18 -95 -82 -73 -146 34 -103 188 -100 216 3 25 89
                                     -55 169 -143 143z m91 -51 c51 -48 15 -138 -56 -138 -47 0 -81 32 -81 79 0 72
                                     84 109 137 59z" />
-                                <path d="M280 260 c-48 -9 -78 -26 -122 -68 -36 -35 -49 -62 -28 -62 5 0 29
+                                    <path d="M280 260 c-48 -9 -78 -26 -122 -68 -36 -35 -49 -62 -28 -62 5 0 29
                                         20 54 44 50 50 87 62 172 53 42 -4 54 -3 54 9 0 20 -76 35 -130 24z" />
-                                <path d="M439 181 c-38 -39 -40 -97 -5 -138 35 -40 107 -40 142 0 55 64 11
+                                    <path fill="yellow" d="M439 181 c-38 -39 -40 -97 -5 -138 35 -40 107 -40 142 0 55 64 11
                                     167 -71 167 -27 0 -44 -8 -66 -29z m81 -40 c0 -12 7 -18 18 -17 9 0 17 -6 17
                                     -14 0 -8 -8 -14 -17 -14 -11 1 -18 -5 -18 -17 0 -10 -7 -19 -15 -19 -8 0 -15
                                     9 -15 19 0 12 -7 18 -17 17 -10 0 -18 6 -18 14 0 8 8 14 18 14 10 -1 17 5 17
                                     17 0 11 7 19 15 19 8 0 15 -8 15 -19z" />
-                            </g>
-                        </svg>
+                                </g>
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div id="inviteFriendsButton">
+                        <a href="./referralPage.html">Invite friends</a>
 
                     </div>
-                </div>
-                <div id="inviteFriendsButton">
-                    <a href="./referralPage.html">Invite friends</a>
-                    <!-- <p>Dismiss</p> -->
                 </div>
             </div>
         </div>
 
         <div id="footer">
-            <a href="./index.html" id="homePage">
+
+
+
+            <a href="./index.html" id="homePage" style="background-color: rgba(0, 128, 0, 0.4);">
                 <svg id="homeicon" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"
                     class="footerIcons">
                     <title>Artboard 97</title>
-                    <path
+                    <path fill="green" stroke="green" fill-opacity="1" stroke-width="5" ;
                         d="M28.781,104.122H99.219a2.111,2.111,0,0,0,2.111-2.111V52.188a2.11,2.11,0,0,0-.851-1.694L65.26,24.3a2.109,2.109,0,0,0-2.519,0l-35.219,26.2a2.11,2.11,0,0,0-.851,1.694v49.822A2.111,2.111,0,0,0,28.781,104.122ZM72.195,99.9H55.8V75.344H72.195Zm-41.3-46.651L64,28.62,97.108,53.249V99.9H76.417V73.233a2.111,2.111,0,0,0-2.111-2.111H53.69a2.111,2.111,0,0,0-2.111,2.111V99.9H30.892Z" />
                 </svg>
-                <p>Home</p>
+                <p style="font-weight: bold;">Home</p>
             </a>
+
 
             <a href="./transactionsPage.html" id="transactionsPage">
                 <svg id="transactionicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="footerIcons">
                     <g id="transactionIconMain">
-                        <path d="M25,13H9l1.8-2.4A1,1,0,1,0,9.2,9.4l-3,4A1,1,0,0,0,7,15H25a1,1,0,0,0,0-2Z" />?
-                        <path
+                        <path fill="green"
+                            d="M25,13H9l1.8-2.4A1,1,0,1,0,9.2,9.4l-3,4A1,1,0,0,0,7,15H25a1,1,0,0,0,0-2Z" />?
+                        <path fill="green"
                             d="M21.4,22.8a1,1,0,0,0,.6.2,1,1,0,0,0,.8-.4l3-4A1,1,0,0,0,25,17H7a1,1,0,0,0,0,2H23l-1.8,2.4A1,1,0,0,0,21.4,22.8Z" />
 
                     </g>
@@ -172,7 +237,7 @@
                     preserveAspectRatio="xMidYMid meet" id="referPageIcon" class="footerIcons">
 
                     <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
-                        <path d="M148 433 c-21 -26 -27 -48 -17 -64 6 -11 0 -15 -29 -19 -36 -5 -37
+                        <path fill="green" d="M148 433 c-21 -26 -27 -48 -17 -64 6 -11 0 -15 -29 -19 -36 -5 -37
                         -6 -40 -54 -2 -27 2 -54 7 -59 6 -6 11 -44 11 -84 0 -108 8 -113 160 -113 152
                         0 160 5 160 113 0 40 5 78 11 84 5 5 9 32 7 59 -3 49 -3 49 -41 52 -32 3 -36
                         6 -28 21 11 20 -5 58 -31 75 -13 8 -26 7 -49 -1 -21 -8 -38 -9 -50 -3 -27 15
@@ -196,7 +261,7 @@
                     style="enable-background:new 0 0 128 128;" xml:space="preserve">
                     <style type="text/css">
                         .st0 {
-                            fill: #0A0A0A;
+                            fill: green;
                         }
 
                         .st1 {
@@ -347,32 +412,34 @@
         </div>
 
         <div id="documentOverlay"></div>
-       
+
 
         <div id="notificationPopup">
-            <div id="notificationPopupIcons" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; padding: 0px 10px 0px 10px;" >
+            <div id="notificationPopupIcons"
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; padding: 0px 10px 0px 10px;">
                 <svg id="notificationClosePage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                        <path
-                            d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
+
+                    <path fill="black" stroke="black" stroke-width="7"
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
                 </svg>
 
-                <img src="./icons/icons8-notification.svg" alt="notificationBell" id="notificationPopupBell" >
+                <img src="./icons/icons8-notification.svg" alt="notificationBell" id="notificationPopupBell">
 
 
             </div>
-                <div id="notificationPopupBody">
+            <div id="notificationPopupBody">
 
 
 
-                    <div id="notificationPopupHeader">
-                        <h3 style="text-align: center; ">Notifications</h3>
-                        <hr style="margin-top: -5px;">
-                        
-                        
-                    </div>
-                    
-                    <div id="notificationList"></div>
+                <div id="notificationPopupHeader">
+                    <h3 style="text-align: center; ">Notifications</h3>
+                    <hr style="margin-top: -5px;">
+
+
                 </div>
+
+                <div id="notificationList"></div>
+            </div>
         </div>
 
 
@@ -383,30 +450,36 @@
 
             </div>
 
-            <div class="userNavbarContent">
+            <button class="userNavbarContent">
                 <a>Account details</a>
                 <p>Information about your account</p>
-            </div>
-            <div class="userNavbarContent">
+            </button>
+            <hr class="seperator">
+
+            <button class="userNavbarContent">
                 <a>Account limits</a>
                 <p>How much you can spend and receive</p>
-            </div>
-            <div class="userNavbarContent">
+            </button>
+            <hr class="seperator">
+
+            <button class="userNavbarContent">
                 <a>Security</a>
                 <p>Protect your self from intruders</p>
 
-            </div>
+            </button>
+            <hr class="seperator">
 
-            <div class="userNavbarContent">
+            <button class="userNavbarContent">
                 <a>Legal</a>
                 <p>About out contract with you</p>
 
-            </div>
+            </button>
+            <hr class="seperator">
 
-            <div class="userNavbarContent">
-                <a style="color: red;">Sign out</a>
+            <button class="userNavbarContent">
+                <p style="color: red;">Sign out</p>
 
-            </div>
+            </button>
 
             <p id="version">version 0.1 </p>
 
@@ -418,81 +491,86 @@
 
                 <h2>Select account</h2>
 
-                <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                    <path
+                <svg class="closePopupIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="black" stroke="black" stroke-width="7"
                         d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
                 </svg>
 
             </div>
-            <div class="homePopupContent">
+            <button class="homePopupContent">
                 <p>CAD</p>
                 <p>Send monry from your $ account</p>
-            </div>
-            <div class="homePopupContent">
+            </button>
+            <button class="homePopupContent">
                 <p>NGN</p>
                 <p>Send money from your N account</p>
 
-            </div>
+            </button>
 
         </div>
 
         <div id="addMoney" class="homePopup">
             <div id="addMoneyHeader" class="homePopupHeader">
                 <h2>Add money</h2>
-                <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                    <path
+                <svg class="closePopupIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="black" stroke="black" stroke-width="7"
                         d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
                 </svg>
 
             </div>
-            <div class="homePopupContent">
+            <button class="homePopupContent">
                 <p>Bank transfer</p>
                 <p>Add money to your accounts with bank transfer</p>
 
-            </div>
-            <div class="homePopupContent">
+            </button>
+            <button class="homePopupContent">
                 <p>Credit card/Debit card</p>
                 <p>Add instantly from a card</p>
 
-            </div>
-            <div class="homePopupContent">
+            </button>
+            <button class="homePopupContent">
                 <p>Cryptocurrency</p>
                 <p>USDT, BTC, ETH...</p>
 
-            </div>
+            </button>
 
         </div>
 
         <div id="threedot" class="homePopup">
             <div id="threedotHeader" class="homePopupHeader">
                 <h2>Account Information</h2>
-                <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                    <path
+                <svg class="closePopupIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="black" stroke="black" stroke-width="7"
                         d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
                 </svg>
 
             </div>
 
-            <div class="homePopupContent">
+            <button class="homePopupContent" onclick="openAccountDetails()">
                 <p>Account details</p>
                 <p>Information about your account</p>
-            </div>
-            <div class="homePopupContent">
+            </button>
+            <button class="homePopupContent">
                 <p>Exchange currency</p>
                 <p>Change your currency to any currency</p>
-            </div>
-            <div class="homePopupContent">
+            </button>
+            <button class="homePopupContent">
                 <p>Account limits</p>
                 <p>See how far you can go with your spending</p>
-            </div>
-            <div class="homePopupContent">
+            </button>
+            <button class="homePopupContent">
                 <p>Account statement</p>
                 <p>Download account statement in any format</p>
-            </div>
-            <div id="addNewAccount" class="homePopupContent">
+            </button>
+            <button class="homePopupContent">
+                <p>Security</p>
+                <p>Protect your self from intruders</p>
+
+            </button>
+            <button id="addNewAccount" class="homePopupContent">
                 <p>+</p>
                 <p>Add new account</p>
-            </div>
+            </button>
         </div>
 
     </div>

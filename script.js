@@ -2,30 +2,43 @@ let balanceToggleButton = document.getElementById('balanceToggleButton');
 let buttonText = document.getElementById('buttonText');
 let cadAmount = document.getElementById('cadAmount');
 let ngnAmount = document.getElementById('ngnAmount')
+let btcAmount = document.getElementById('btcAmount')
 
 
+let hideEye = document.querySelector('.hideEye')
+let showEye = document.querySelector('.showEye')
 
 let isMasked = true
 
-balanceToggleButton.addEventListener('click', (e) => {
-    e.preventDefault();
+function balanceToggle () {
+
+    
+        if (isMasked) {
+            cadAmount.innerText = '$300.50'
+            ngnAmount.innerText = 'N100,000.87'
+            btcAmount.innerText = '฿0.19102'
+            buttonText.innerText = 'Hide balance'
+           
+            showEye.classList.add('hideBalance')
+            hideEye.classList.add('showBalance')
+              showEye.classList.remove('showBalance')
 
 
-    if (isMasked) {
-        cadAmount.innerText = '$300.50'
-        ngnAmount.innerText = 'N100,000.87'
-        buttonText.innerText = 'Hide balance'
-    } else {
-        cadAmount.innerText = '****'
-        ngnAmount.innerText = '****'
-        buttonText.innerText = "Show balance"
-    }
-    isMasked = !isMasked
-})
+        } else {
+            cadAmount.innerText = '****'
+            ngnAmount.innerText = '****'
+             btcAmount.innerText = '****'
+            buttonText.innerText = "Show balance"
+
+             showEye.classList.add('showBalance')
+            hideEye.classList.remove('showBalance')
+        }
+        isMasked = !isMasked
+            } 
 
 let sendMoney = document.getElementById('sendMoney');
 let sendMoneyButton = document.getElementById('sendMoneyButton');
-let closeIcon = document.querySelectorAll('.closeIcon');
+let closePopupIcon = document.querySelectorAll('.closePopupIcon');
 
 let addMoneyButton = document.getElementById('addMoneyButton');
 let addMoney = document.getElementById('addMoney');
@@ -36,7 +49,7 @@ let threedot = document.getElementById('threedot');
 let documentOverlay = document.getElementById('documentOverlay');
 
 
-let profileIcon = document.getElementById('profileIcon');
+// let profileIcon = document.getElementById('profileIcon');
 let userNavbar = document.getElementById('userNavbar');
 let navbarOverlay = document.getElementById('navbarOverlay');
 
@@ -57,20 +70,20 @@ notificationBell.addEventListener('click', (e) => {
 })
 
 
-profileIcon.addEventListener('click', (e) => {
-    userNavbar.style.display = 'flex'
-    userNavbar.style.flexDirection = 'column'
-    documentOverlay.style.display = "block"
-    document.body.style.overflow = 'hidden'
-    userNavbar.style.overflow = 'hidden'
+// profileIcon.addEventListener('click', (e) => {
+//     userNavbar.style.display = 'flex'
+//     userNavbar.style.flexDirection = 'column'
+//     documentOverlay.style.display = "block"
+//     document.body.style.overflow = 'hidden'
+//     userNavbar.style.overflow = 'hidden'
 
-    userNavbar.classList.add('show')
-    documentOverlay.classList.add('show')
-    userNavbar.setAttribute('aria-hidden', 'false')
+//     userNavbar.classList.add('show')
+//     documentOverlay.classList.add('show')
+//     userNavbar.setAttribute('aria-hidden', 'false')
 
 
-    e.stopPropagation()
-})
+//     e.stopPropagation()
+// })
 
 
 
@@ -113,7 +126,7 @@ notificationClosePage.addEventListener('click', (e) => {
 
 })
 
-closeIcon.forEach(svg => {
+closePopupIcon.forEach(svg => {
 
     svg.addEventListener('click', (e) => {
         sendMoney.style.display = 'none'
@@ -136,6 +149,8 @@ documentOverlay.addEventListener('click', (e) => {
     sendMoney.style.display = 'none'
     addMoney.style.display = 'none'
     threedot.style.display = 'none'
+    notificationPopup.style.display = 'none'
+    notificationBell.style.display = 'block'
 
     document.body.style.overflow = ''
 
@@ -147,3 +162,14 @@ documentOverlay.addEventListener('click', (e) => {
     userNavbar.setAttribute('aria-hidden', 'true')
 })
 
+function openAccountDetails(){
+    window.open('./profile.html', '_self')
+}
+
+
+
+function whenOnPage(){
+    if(true){
+        classList.add('greenBackgroundFocus')
+    }
+}

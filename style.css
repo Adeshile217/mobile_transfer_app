@@ -8,13 +8,14 @@ body{
     font-size: 12px;
     background-color: white;
 }
+
 #firstContainer{
     box-sizing: border-box;
     background-color: white;
-    /* background: red; */
+    
     height: auto;
     width: 100%;
-    /* border: solid thin black; */
+    
     padding: 20px;
     
 }
@@ -45,7 +46,7 @@ body{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    
+    cursor: pointer;
 
 }
 #profileIcon >img{
@@ -61,8 +62,6 @@ body{
 }
 
 #referal{
-    /* margin-top: 30px; */
-    /* padding: 15px; */
     background-color: rgba(0, 128, 0, 0.1);
     border-radius: 20px;
     color: rgb(0, 128, 0);
@@ -72,6 +71,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 #giftIcon{
     height: 30px;
@@ -82,7 +82,7 @@ body{
 
 #notificationBell{
     height: 30px;
-    /* stroke: aquamarine; */
+   cursor: pointer;
     
 }
 
@@ -94,7 +94,7 @@ body{
     
 
 }
-#myAccounts{
+.myAccounts{
     color: rgb(106, 104, 104);
 
 }
@@ -108,12 +108,21 @@ body{
     background-color: transparent;
     text-decoration: none;
     border: none;
+    cursor: pointer;
 
 }
-#hideBalance{
+
+.hideBalance{
     /* margin-left: 10px; */
     height: 15px;
+    display: none;
 }
+
+.showBalance{
+    height: 15px;
+    display: flex;
+}
+
 
 #accounts{
     display: flex;
@@ -165,6 +174,8 @@ body{
     border-radius: 11px;
     background-color: green;
     color: white;
+    border: none;
+    cursor: pointer;
 }
 
 #addMoneyButton{
@@ -175,7 +186,7 @@ body{
     border-radius: 11px;
 
     color: green;
-    /* margin-left: 5px; */
+    cursor: pointer;
 }
 
 
@@ -197,6 +208,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 
 }
 
@@ -218,6 +230,36 @@ body{
     margin-bottom: 80px;
 
 }
+
+.cryptoBalanceSubContainer{
+    background-color: white;
+    box-sizing: border-box;
+    /* height: 110px; */
+    width: 100%;
+    border-radius: 15px;
+    padding: 30px 20px;  
+    font-size: 13px; 
+}
+.cryptoCurrency{
+    display: flex;
+}
+
+.cryptoCurrency >p{
+
+}
+
+#btcAmount{
+    margin-top: 20px;
+}
+
+#btc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 #getStarted{
     width: 100%;
     display: flex;
@@ -257,7 +299,8 @@ body{
 #addPerson{
     height: 60px;
     width: 60px;
-    border: solid 3px green;
+ 
+    background-color: green;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -306,6 +349,21 @@ body{
 
 }
 
+.forward{
+ cursor: pointer;
+}
+
+/* #homePage{
+     height: 100%;
+    width: calc(100%/4);
+    background-color: #008000;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+
+} */
 
 
 #transactionsPage,
@@ -315,6 +373,7 @@ body{
     height: 100%;
     width: calc(100%/4);
     background-color: white;
+    
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -326,6 +385,10 @@ body{
     /* padding-bottom: 20px; */
 
 }
+.greenBackgroundFocus{
+    background-color: green;
+}
+
 
 .footerIcons {
     height: 30px;
@@ -343,7 +406,7 @@ body{
 #referPage >p,
 #helpPage >p,
 #homePage >p{
-    color: grey;
+    color: green;
     font-weight: 400;
 }
 a{
@@ -353,21 +416,20 @@ a{
 }
 #homeicon{
     stroke-width: 3;
-    fill-opacity: 0.4;
+    fill-opacity: 1;
 }
 #transactionIconMain{
     stroke-width: 0.01;
     fill-opacity: 0.4;
-    /* rotate: 90deg; */
+    
 }
 #referPageIcon{
     stroke-width: 0.01;
     fill-opacity: 0.4;
-    /* height: 38px; */
 }
 #helpIcon{
     stroke-width: 0.01;
-    fill-opacity: 0.4;
+    fill-opacity: 0.6;
     margin-top: 3px;
     height: 28px;
 }
@@ -441,12 +503,13 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 
 }
 .userIcon{
-    width: 60px;
-    height: 60px;
-    margin-bottom: -15px;
+    width: 80px;
+    height: 80px;
+    /* margin-bottom: 0px; */
 }
 
 .helpContent,
@@ -455,15 +518,19 @@ a{
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 14px;
+    background-color: transparent;
+    text-align: start;
+    border: none;
+    cursor: pointer;
 }
 
 
-#version{
+.version{
     text-align: center;
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    bottom: 0;
+   
+    /* transform: translateX(-50%); */
 
 }
 
@@ -475,7 +542,7 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
-    left: 0;
+    /* left: 1px;    */
     display: none;
 
 
@@ -520,17 +587,23 @@ a{
     color: black;
     width: 100%;
     height: auto;
-    border: solid thin grey;
-    
+    border: solid thin rgba(0, 128, 0, 0.3);
+    background-color: transparent;
     border-radius: 12px;
     margin-bottom: 10px;
+    text-align: start;
+    cursor: pointer;
 }
+
 
 .helpContent :nth-child(1),
 .userNavbarContent :nth-child(1),
 .homePopupContent :nth-child(1){
     margin:0;
+    text-decoration: none;
+    color: green;
 }
+
 
 .helpContent :nth-child(2),
 .userNavbarContent :nth-child(2),
@@ -575,11 +648,12 @@ a{
    
     color: green;
 }
-.closeIcon{
+.closePopupIcon{
     position: absolute;
-    right: 17px;
-    height: 20px;
-    width: 20px;
+    right: 20px;
+    top: 12px;
+    height: 18px;
+    width: 18px;
     background-color: transparent;
     margin-top: 8px;
     stroke: black;
@@ -608,3 +682,124 @@ a{
     /* margin-top: 10px; */
     /* stroke: black; */
 }
+
+.closeProfile{
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    height: 18px;
+}
+
+.seperator {
+    box-sizing: border-box;
+    margin: 0px 10px 10px;
+    width: 97%;
+    color: rgba(0, 128, 0, 0.1);;
+}
+
+#profileMainContainer{
+    box-sizing: border-box;
+    padding: 10px 20px 20px;
+    width: 100%;
+    height: 100%;
+  
+}
+#profileHeader{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: rgba(0, 128, 0, 0.1);
+    border-radius: 20px;
+}
+
+
+
+#profileMainContainer >h2{
+    text-align: center;
+}
+
+
+#profileContent{
+    background-color: rgba(0, 128, 0, 0.1);
+    border-radius: 20px;
+    height: 100%;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.profileSubContent{
+    /* border: solid thin rgba(0, 128, 0, 0.3);;
+    border-radius: 12px; */
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+
+.profileSubContentChild1{
+    font-weight: 200;
+    color: green;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.profileSubContentChild2{
+    font-weight: bold;
+    /* color: black; */
+}
+
+
+
+
+
+
+
+
+
+
+/*
+@media(min-width : 1034px){
+     body{
+        display: flex;
+        justify-content: center;
+    }
+    #mainContainer{
+        border: solid thick black;
+        border-radius: 20px;
+        width: 390px;
+        height: 100%;
+    }
+    #footer{
+        max-width: 390px;
+        
+        position: relative;
+      
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media(max-height : 600px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #mainContainer{
+        border: solid thick black;
+        border-radius: 20px;
+        width: 390px;
+    }
+    #footer{
+        max-width: 390px;
+        position: absolute;
+        bottom: -110px;
+        border-radius: 0 0 20px 20px;
+    }
+}
+    */
